@@ -1,0 +1,43 @@
+body {
+	height: 100vh;
+	background-color: #f1f1f1;
+	display: grid;
+	place-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+.waterdrop {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle at 85% 76%,
+		rgba(242, 242, 242, 1) 30%,
+		rgba(93, 93, 93, 1) 100%
+	);
+	box-shadow: 57px 65px 80px -38px rgba(0, 0, 0, 0.75);
+}
+
+.waterdrop:before {
+	content: "";
+	display: block;
+	height: 40px;
+	width: 80px;
+	background-color: white;
+	position: relative;
+	left: 40px;
+	top: 30px;
+	clip-path: polygon(
+		50% 6%,
+		70% 7%,
+		98% 35%,
+		61% 16%,
+		31% 29%,
+		18% 55%,
+		20% 84%,
+		6% 58%,
+		13% 37%,
+		28% 17%
+	);
+}
